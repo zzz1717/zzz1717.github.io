@@ -25,6 +25,13 @@ function calcYearProgress() {
 
 }
 
+function calcCountDown() {
+    let now = new Date();
+    let currentYear = now.getFullYear();
+    let end = new Date(currentYear, 11, 31);
+    
+}
+
 function setYearProgress() {
 
     $(".progress-bar").css("width", calcYearProgress);
