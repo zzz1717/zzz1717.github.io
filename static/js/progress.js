@@ -29,13 +29,21 @@ function calcCountDown() {
     let now = new Date();
     let currentYear = now.getFullYear();
     let end = new Date(currentYear, 11, 31);
-    
+    let remainTime = (end - now) / 1000;
+    let hour = 60 * 60;
+    let minute = 60;
+    let remainHour = parseInt(remainTime / hour);
+    let remainMinute = parseInt((remainTime - remainHour * hour) / minute);
+    let remainSecond = remainTime - remainMinute * minute - remainHour * hour;
+    return remainHour + "小时 :" + remainMinute + "分钟 :" + remainSecond + "秒";
+
 }
 
 function setYearProgress() {
 
     $(".progress-bar").css("width", calcYearProgress);
     $(".progress-bar").text(calcYearProgress);
+    $("#countdown").text(calcCountDown);
 }
 
 $(document).ready(
