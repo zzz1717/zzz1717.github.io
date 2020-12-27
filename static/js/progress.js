@@ -28,7 +28,7 @@ function calcYearProgress() {
 function calcCountDown() {
     let now = new Date();
     let currentYear = now.getFullYear();
-    let end = new Date(currentYear, 11, 31);
+    let end = new Date(currentYear + 1, 0, 1);
     let remainTime = (end - now) / 1000;
     let hour = 60 * 60;
     let minute = 60;
