@@ -1,0 +1,25 @@
+.page-header {
+    user-select: none;
+}
+
+.jumbotron {
+    background-color: silver;
+    user-select: none;
+}
+
+.progress {
+    background-color: lightgrey;
+}
+
+.progress-bar {
+    background-color: rgb(88, 116, 168);
+    user-select: none;
+    font-family: "consolas";
+    font-weight: bolder;
+    background-color: slategrey;
+
+}
+
+blockquote {
+    user-select: none;
+}
