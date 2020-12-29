@@ -36,7 +36,7 @@ function calcCountDown() {
     let remainMinute = parseInt((remainTime - remainHour * hour) / minute);
     let remainSecond = parseInt(remainTime - remainMinute * minute - remainHour * hour);
     if (remainSecond < 10) {
-        remainSecond += "0";
+        remainSecond="0"+remainSecond;
     }
     return remainHour + "小时:" + remainMinute + "分钟:" + remainSecond + "秒";
 
