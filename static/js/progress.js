@@ -17,7 +17,7 @@ function calcYearProgress() {
     let now = new Date();
     let currentYear = now.getFullYear();
     let start = new Date(currentYear, 0, 1);
-    let end = new Date(currentYear, 11, 31);
+    let end = new Date(currentYear+1, 0, 1);
     let current = now - start;
     let sum = end - start;
     let percent = current / sum;
