@@ -38,6 +38,10 @@ function calcCountDown() {
     if (remainSecond < 10) {
         remainSecond="0"+remainSecond;
     }
+    if(currentYear===2021)
+    {
+        alert("新年快乐.")
+    }
     return remainHour + "小时:" + remainMinute + "分钟:" + remainSecond + "秒";
 
 }
