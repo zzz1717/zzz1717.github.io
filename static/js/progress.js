@@ -38,10 +38,7 @@ function calcCountDown() {
     if (remainSecond < 10) {
         remainSecond="0"+remainSecond;
     }
-    if(currentYear===2021)
-    {
-        alert("新年快乐.")
-    }
+    
     return remainHour + "小时:" + remainMinute + "分钟:" + remainSecond + "秒";
 
 }
@@ -56,7 +53,8 @@ function setYearProgress() {
 $(document).ready(
 
     setInterval("setYearProgress()", 1000),
-    console.log("You are such disgusting.🤑")
+    console.log("You are such disgusting.🤑"),
+    alert("新年快乐.")
 
 )
 
