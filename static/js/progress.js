@@ -54,8 +54,6 @@ $(document).ready(
 
     setInterval("setYearProgress()", 1000),
     console.log("You are such disgusting.🤑"),
-    alert("新年快乐.")
-
 )
 
 
