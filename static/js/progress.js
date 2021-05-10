@@ -17,7 +17,7 @@ function calcYearProgress() {
     let now = new Date();
     let currentYear = now.getFullYear();
     let start = new Date(currentYear, 0, 1);
-    let end = new Date(currentYear+1, 0, 1);
+    let end = new Date(currentYear + 1, 0, 1);
     let current = now - start;
     let sum = end - start;
     let percent = current / sum;
@@ -36,9 +36,12 @@ function calcCountDown() {
     let remainMinute = parseInt((remainTime - remainHour * hour) / minute);
     let remainSecond = parseInt(remainTime - remainMinute * minute - remainHour * hour);
     if (remainSecond < 10) {
-        remainSecond="0"+remainSecond;
+        remainSecond = "0" + remainSecond;
     }
-    
+    if (remainMinute < 10) {
+        remainMinute = '0' + remainMinute;
+    }
+
     return remainHour + "小时:" + remainMinute + "分钟:" + remainSecond + "秒";
 
 }
