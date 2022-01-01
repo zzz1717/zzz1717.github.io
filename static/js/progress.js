@@ -41,6 +41,9 @@ function calcCountDown() {
     if (remainMinute < 10) {
         remainMinute = '0' + remainMinute;
     }
+    if (remainHour < 10) {
+        remainHour = '0' + remainHour;
+    }
 
     return remainHour + "小时:" + remainMinute + "分钟:" + remainSecond + "秒";
 
