@@ -44,8 +44,8 @@ function calcCountDown() {
     if (remainHour < 10) {
         remainHour = '0' + remainHour;
     }
-
-    return remainHour + "小时:" + remainMinute + "分钟:" + remainSecond + "秒";
+    let temp = calcYearProgress;
+    return remainHour + "小时:" + remainMinute + "分钟:" + remainSecond + "秒" + "br" + temp;
 
 }
 
@@ -53,7 +53,7 @@ function setYearProgress() {
 
     $(".progress-bar").css("width", calcYearProgress);
     //$(".progress-bar").text(calcYearProgress);
-    $("#countdown").text(calcCountDown + String("<br>" + calcYearProgress));
+    $("#countdown").text(calcCountDown);
 }
 
 $(document).ready(
