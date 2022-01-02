@@ -45,8 +45,7 @@ function calcCountDown() {
         remainHour = '0' + remainHour;
     }
     let temp = calcYearProgress();
-    console.log(temp);
-    return remainHour + "小时:" + remainMinute + "分钟:" + remainSecond + "秒";
+    return remainHour + "小时:" + remainMinute + "分钟:" + remainSecond + "秒/" + temp;
 
 }
 
