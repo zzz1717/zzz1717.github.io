@@ -21,7 +21,7 @@ function calcYearProgress() {
     let current = now - start;
     let sum = end - start;
     let percent = current / sum;
-    return (percent * 100) + "%";
+    return (percent * 100).toFixed(6) + "%";
 
 }
 
