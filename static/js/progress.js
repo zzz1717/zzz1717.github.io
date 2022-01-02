@@ -53,7 +53,7 @@ function calcCountDown() {
 function setYearProgress() {
 
     $(".progress-bar").css("width", calcYearProgress);
-    //$(".progress-bar").text(calcYearProgress);
+    $(".progress").text(calcYearProgress);
     $("#countdown").text(calcCountDown);
 }
 
