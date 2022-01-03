@@ -44,8 +44,7 @@ function calcCountDown() {
     if (remainHour < 10) {
         remainHour = '0' + remainHour;
     }
-    let temp = calcYearProgress();
-    return remainHour + "小时:" + remainMinute + "分钟:" + remainSecond + "秒"+<br/>+ currentYear + "  has passed   " + temp;
+    return remainHour + "小时:" + remainMinute + "分钟:" + remainSecond + "秒";
 
 }
 
